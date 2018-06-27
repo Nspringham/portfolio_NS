@@ -1,5 +1,5 @@
 function classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items')
+    const navs = document.querySelectorAll('.menu-items')
     
     navs.forEach(nav => nav.classList.toggle('.menu-item-toggle-show'));
   }
