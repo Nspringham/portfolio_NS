@@ -31,11 +31,12 @@ body{
     font-style: normal;
     color: #3E3E3E;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .landing {
     width: 100%;
-    height: 946px;
+    height: 1080px;
     display: flex;
     flex-direction: column;
     background-image: url(img/landingpage_mac.jpg);
@@ -101,7 +102,7 @@ body{
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 110px;
+    margin-top: 180px;
 }
 .socialmedia-container {
     /* border: solid red 1px; */
@@ -119,7 +120,7 @@ body{
 .facebook-icon{
     background-image: url(img/icons/social_media/facebook_darkgrey.svg);
     background-size: cover;
-    transition: 0.7s ease-in;
+    transition: 0.6s ease-in;
 }
 .facebook-icon:hover{
     background-image: url(img/icons/social_media/facebook_blue.svg);
@@ -127,7 +128,7 @@ body{
 .instagram-icon{
     background-image: url(img/icons/social_media/instagram_darkgrey.svg);
     background-size: cover;
-    transition: 0.7s ease-in;
+    transition: 0.6s ease-in;
 }
 .instagram-icon:hover{
     background-image: url(img/icons/social_media/instagram_blue.svg);
@@ -135,7 +136,7 @@ body{
 .linkedin-icon{
     background-image: url(img/icons/social_media/linkedin_darkgrey.svg);
     background-size: cover;
-    transition: 0.7s ease-in;
+    transition: 0.6s ease-in;
 }
 .linkedin-icon:hover{
     background-image: url(img/icons/social_media/linkedin_blue.svg);
@@ -143,11 +144,69 @@ body{
 .twitter-icon{
     background-image: url(img/icons/social_media/twitter_darkgrey.svg);
     background-size: cover;
-    transition: 0.7s ease-in;
+    transition: 0.6s ease-in;
 }
 .twitter-icon:hover{
     background-image: url(img/icons/social_media/twitter_blue.svg);
 }
+
+/* SKILLSET */
+.skillset-container{
+    height: 1080px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillset-header {
+    margin: 50px;
+}
+.skillset-header h1 {
+    font-size: 46px;
+}
+.skillset-header p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.portfolio-container{
+    width: 65%;
+    height: 400px;
+    border: red solid 1px;
+    display: grid;
+    grid-template-rows: 380px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.portfolio-item{
+    border: green solid 1px;
+    width: 250px;
+    /* height: 380px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.port-logo{
+    width: 90%;
+    height: 200px;
+    border: blue solid 1px;
+}
+.port-header{
+    font-family: Roboto-Light;
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 26px;
+}
+.line-break{
+    width:35%;
+    border-bottom: solid 1px #4999BC;
+    margin: 6px 0px 10px 0px;
+}
+.port-text{
+    line-height: 22px;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -201,7 +260,7 @@ body{
         display: flex;
         text-align: center;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .logo-container{
         margin-top:10px;
@@ -214,7 +273,7 @@ body{
         height:32px;
         width: 32px;
         margin: 20px 12px 0px 12px;
-        border: solid red 1px;
+        /* border: solid red 1px; */
     }
 }
 
