@@ -35,7 +35,7 @@ body{
 }
 .landing {
     width: 100%;
-    height: 1080px;
+    height: 946px;
     display: flex;
     flex-direction: column;
     background-image: url(img/landingpage_mac.jpg);
@@ -92,7 +92,7 @@ body{
 }
 /* LOGO end */
 
-/*HEADER START*/
+/*LANDING-HEADER START*/
 .landing-header{
     font-family: Roboto-Light;
     font-size: 40px;
@@ -101,7 +101,22 @@ body{
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-top: 110px;
 }
+.socialmedia-container {
+    /* border: solid red 1px; */
+    height: 35px;
+    margin-top:5px;
+    display: flex;
+    justify-content: center;
+}
+.sm-icon{
+    height:40px;
+    width: 40px;
+    margin: 6px;
+    /* border: solid red 1px; */
+}
+
 
 
 /* MEDIA QUERIES */
@@ -173,18 +188,24 @@ body{
     }
     .logo-container {
         margin-right: auto;
-        margin-left: 80px;
+        margin-left: 225px;
         margin-top: 60px;
     }
     .menu-items{
         margin-top: 65px;
         margin-right: 20px;
         height: 15px;
-        padding: 5px;
-        border-bottom: #4999BC 1px solid;
+        padding-bottom: 8px;
+        border-bottom: #4999BC 1.5px solid;
+    }
+    .menu-items:hover {
+        border-bottom: grey 1.5px solid
+    }
+    .menu-items {
+        font-size: 20px;
     }
     .last-item{
-        margin-right: 65px;
+        margin-right: 225px;
     }
 
 }   
