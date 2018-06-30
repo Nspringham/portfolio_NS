@@ -111,12 +111,43 @@ body{
     justify-content: center;
 }
 .sm-icon{
-    height:40px;
-    width: 40px;
-    margin: 6px;
+    height:37px;
+    width: 37px;
+    margin: 20px 18px 0px 18px;
     /* border: solid red 1px; */
 }
-
+.facebook-icon{
+    background-image: url(img/icons/social_media/facebook_darkgrey.svg);
+    background-size: cover;
+    transition: 0.7s ease-in;
+}
+.facebook-icon:hover{
+    background-image: url(img/icons/social_media/facebook_blue.svg);
+}
+.instagram-icon{
+    background-image: url(img/icons/social_media/instagram_darkgrey.svg);
+    background-size: cover;
+    transition: 0.7s ease-in;
+}
+.instagram-icon:hover{
+    background-image: url(img/icons/social_media/instagram_blue.svg);
+}
+.linkedin-icon{
+    background-image: url(img/icons/social_media/linkedin_darkgrey.svg);
+    background-size: cover;
+    transition: 0.7s ease-in;
+}
+.linkedin-icon:hover{
+    background-image: url(img/icons/social_media/linkedin_blue.svg);
+}
+.twitter-icon{
+    background-image: url(img/icons/social_media/twitter_darkgrey.svg);
+    background-size: cover;
+    transition: 0.7s ease-in;
+}
+.twitter-icon:hover{
+    background-image: url(img/icons/social_media/twitter_blue.svg);
+}
 
 
 /* MEDIA QUERIES */
@@ -178,6 +209,12 @@ body{
     .logo-name{
         margin-top: 13px;
         margin-bottom: 1px;
+    }
+    .sm-icon{
+        height:32px;
+        width: 32px;
+        margin: 20px 12px 0px 12px;
+        border: solid red 1px;
     }
 }
 
