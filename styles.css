@@ -56,18 +56,13 @@ body{
 }
 .logo-container {
     display:flex;
-    align-items: flex-start;
-    /* border: solid red 1px; */
 }
 .logo-name{
     display:flex;
-    justify-content: space-between;
 }
 .menu-items {
     display:flex;
-    justify-content: flex-end;
 }
-
 .Navbar__Link-toggle {
     display:none;
 }
@@ -98,7 +93,7 @@ body{
 /* LOGO end */
 
 /*HEADER START*/
-.header{
+.landing-header{
     font-family: Roboto-Light;
     font-size: 40px;
     font-style: bold;
@@ -111,10 +106,12 @@ body{
 
 /* MEDIA QUERIES */
 /*iPhone 6 Portrait*/
-
-@media only screen and (min-width: 360px) and (max-width: 667px) and (orientation : portrait) { 
+@media only screen and (min-width: 360px) and (max-width: 725px) and (orientation : portrait) { 
     .landing {
         background-image: url(img/phone_420x630.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 750px;
         
     }
@@ -129,7 +126,7 @@ body{
         padding: 6.5px;
         visibility: hidden;
         text-align: center;
-        width: 40%;
+        width: 30%;
         opacity: 0;
         transition: visibility 0s, opacity 0.7s ease-in-out;  
     }
@@ -150,7 +147,7 @@ body{
         position: relative;
         cursor: pointer;
     }
-    .header{
+    .landing-header{
         font-family: Roboto-Light;
         font-size: 25px;
         font-style: bold;
@@ -158,5 +155,36 @@ body{
         display: flex;
         text-align: center;
         flex-direction: column;
+        margin-top: 20px;
+    }
+    .logo-container{
+        margin-top:10px;
+    }
+    .logo-name{
+        margin-top: 13px;
+        margin-bottom: 1px;
     }
 }
+
+@media only screen and (min-width: 726px){
+    .nav-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo-container {
+        margin-right: auto;
+        margin-left: 80px;
+        margin-top: 60px;
+    }
+    .menu-items{
+        margin-top: 65px;
+        margin-right: 20px;
+        height: 15px;
+        padding: 5px;
+        border-bottom: #4999BC 1px solid;
+    }
+    .last-item{
+        margin-right: 65px;
+    }
+
+}   
