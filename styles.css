@@ -30,6 +30,7 @@ body{
     font-family: Roboto-Light;
     font-style: normal;
     color: #3E3E3E;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,42 +153,47 @@ body{
 
 /* SKILLSET SECTION */
 .skillset-container{
-    height: 960px;
+    
+    height: 1100px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .skillset-header {
     margin: 60px 10px 50px 10px;
 }
 .skillset-header h1 {
-    font-size: 46px;
+    font-size: 44px;
 }
 .skillset-header p{
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 8px;
 }
-.portfolio-container{
+.skills-container{
     width: 65%;
-    height: 500px;
+    height: 400px;
     /* border: red solid 1px; */
     display: grid;
-    grid-template-rows: 435px;
+    grid-template-rows: 415px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
+    justify-content: center;
+    
     flex-wrap: wrap;
     
 }
-.portfolio-item{
+.skills-item{
     /* border: green solid 1px; */
     width: 250px;
-    height: 435px;
+    height: 410px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
 }
-.port-logo{
+.skill-logo{
     width: 70%;
     margin: 5px;
     height: 170px;
@@ -197,7 +203,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
 }
-.port-header{
+.skill-header{
     font-family: Roboto-Light;
     margin-top: 10px;
     height: 30px;
@@ -205,41 +211,58 @@ body{
     font-size: 22px;
 }
 .line-break{
-    width:35%;
+    width:28%;
     border-bottom: solid 1px #4999BC;
     margin: 6px 0px 14px 0px;
 }
-.port-text{
+.skill-text{
     line-height: 20px;
     width:90%;
 }
 .html-icon{
     background-image: url(img/icons/html_css.svg);
+    overflow: hidden;
+    background-size: 120px;
 }
 .node-icon{
     width: 60%;
     background-image: url(img/icons/node-js.svg);
+    overflow: hidden;
+    background-size: 110px;
 }
 .design-icon{
-    background-image: url(img/icons/design.svg);
+    background-image: url(img/icons/design_.svg);
+    overflow: hidden;
+    background-size: 180px;
 }
 .comp-icon{
-    background-image: url(img/icons/comp_maintenance.svg);
+    background-image: url(img/icons/comp_maintenance_.svg);
+    overflow: hidden;
+    background-size: 200px;
 }
 .print-icon{
     background-image: url(img/icons/print_network.svg);
+    overflow: hidden;
+    background-size: 150px;
 }
 .social-icon{
-    max-width: 90%;
     background-image: url(img/icons/social_skills.svg);
+    overflow: hidden;
+    background-size: 120px;
 }
 .rd-icon{
-    background-image: url(img/icons/research_development.svg);
+    background-image: url(img/icons/research_development_.svg);
 }
 .responsive-icon{
     background-image: url(img/icons/responsive.svg);
+    overflow: hidden;
+    background-size: 150px;
 }
-
+.banner{
+    display:flex;
+    height: 500px;
+    background-color: #ACAEAF;
+}
 
 
 
@@ -311,9 +334,10 @@ body{
         /* border: solid red 1px; */
     }
     .portfolio-item{
-        margin-top: 25px;
-        
-        
+        margin-top: 20px;   
+    }
+    .skillset-container{
+        height: 3500px;
     }
 }
 
@@ -343,5 +367,24 @@ body{
     .last-item{
         margin-right: 225px;
     }
-
+    .skillset-container{
+        height: 3580px;
+    }
 }   
+@media only screen and (min-width: 864px) {
+    .skillset-container{
+        height: 1850px;
+    }
+}
+
+@media only screen and (min-width: 1294px) {
+    .skillset-container{
+        height: 1450px;
+    }
+}
+
+@media only screen and (min-width: 1724px){
+    .skillset-container{
+        height: 1100px;
+    }
+}
