@@ -48,6 +48,7 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 2px 2px 2px rgb(204, 204, 204);
 }
 
 /* NAVBAR START */
@@ -120,36 +121,38 @@ body{
     height:37px;
     width: 37px;
     margin: 20px 18px 0px 18px;
+    background-size: cover;
+    transition: 0.6s ease-in;
     /* border: solid red 1px; */
 }
 .facebook-icon{
     background-image: url(img/icons/social_media/facebook_darkgrey.svg);
-    background-size: cover;
-    transition: 0.6s ease-in;
+    /* background-size: cover;
+    transition: 0.6s ease-in; */
 }
 .facebook-icon:hover{
     background-image: url(img/icons/social_media/facebook_blue.svg);
 }
 .instagram-icon{
     background-image: url(img/icons/social_media/instagram_darkgrey.svg);
-    background-size: cover;
-    transition: 0.6s ease-in;
+    /* background-size: cover;
+    transition: 0.6s ease-in; */
 }
 .instagram-icon:hover{
     background-image: url(img/icons/social_media/instagram_blue.svg);
 }
 .linkedin-icon{
     background-image: url(img/icons/social_media/linkedin_darkgrey.svg);
-    background-size: cover;
-    transition: 0.6s ease-in;
+    /* background-size: cover;
+    transition: 0.6s ease-in; */
 }
 .linkedin-icon:hover{
     background-image: url(img/icons/social_media/linkedin_blue.svg);
 }
 .twitter-icon{
     background-image: url(img/icons/social_media/twitter_darkgrey.svg);
-    background-size: cover;
-    transition: 0.6s ease-in;
+    /* background-size: cover;
+    transition: 0.6s ease-in; */
 }
 .twitter-icon:hover{
     background-image: url(img/icons/social_media/twitter_blue.svg);
@@ -162,15 +165,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
-.skillset-header {
-    margin: 60px 10px 50px 10px;
-}
-.skillset-header h1 {
+.title-header {
+    margin: 75px 10px 50px 10px;
+    color: #9EA0A1;
+} 
+.title-header h1 {
     font-size: 44px;
 }
-.skillset-header p{
+.title-header p{
     font-size: 16px;
     margin-top: 8px;
 }
@@ -295,12 +298,139 @@ body{
     border-bottom: solid 1.4px #4999BC;
     margin-top: 40px;
 }
+
  /* ABOUT SECTION */
  .about-container{
-     display: flex;
-     height: 600px;
+    height: 880px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center; 
  }
+.headshot{
+    width: 185px;
+    height: 185px;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    background-image: url(img/headshot.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+.about-text{
+    width: 55%;
+    color: #949494;
+    font-size: 17px;
+    font-family: Roboto-Light;
+    line-height: 30px;
+}
+.about-gap {
+    margin: 15px 0px 10px 0px;
+}
+.mail-icon{
+    width: 46px;
+    height: 46px;
+    margin-top: 50px;
+    background-image: url(img/icons/mail_blue.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
+/* PORTFOLIO SECTION */
+.portfolio-container{
+    height: 850px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.project-grid {
+    width: 65%;
+    height: 256px;
+    display: grid;
+    grid-template-rows: 260px;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-item{
+    width: 375px;
+    height: 250px;
+    /* border: solid green 1px; */
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+.project-icon{
+    height: 130px;
+    width: 130px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.fcc-color {
+    background-color: #006401;
+}
+.fcc-icon {
+    background-image: url(img/icons/free-code-camp.svg);
+    width: 180px;
+}   
+.github-color{
+    background-color: #262626;
+}
+.github-icon{
+    background-image: url(img/icons/github.svg);
+    
+}
+.codewars-color{
+    background-color: #AA2E22;
+}
+.codewars-icon{
+    background-image: url(img/icons/codewars.svg);
+}
+.ssk-color{
+    background-color: #DBDBDB;
+}
+.ssk-icon{
+    background-image: url(img/icons/logossk.svg);
+    width: 250px;
+}
+.python-color{
+    background-color: #A6C6E1;
+}
+.python-icon{
+    background-image: url(img/icons/python-5.svg);
+}
+.mongo-color{
+    background-color: #D2E8CC;
+}
+.mongo-icon{
+    background-image: url(img/icons/mongodb.svg);
+    background-size: 250px;
+    width: 250px;
+}
+/* .logo-container-port{
+    display: flex;
+    align-content: flex-end;
+} */
+
+
+/* FOOTER SECTION */
+.footer-container{
+    display: flex;
+    height: 100px;
+    background-color: #4999BC;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -379,6 +509,17 @@ body{
         font-size: 16px;
         line-height: 22px;
     }
+    .project-grid{
+       height: 215px; 
+    }
+    .project-item{
+        width: 300px;
+        height: 200px;
+    }
+    .portfolio-container{
+        height: 1500px;
+    }
+
 }
 
 @media only screen and (min-width: 726px){
@@ -415,11 +556,28 @@ body{
     .skillset-container{
         height: 1850px;
     }
+    .about-container{
+        height: 950px;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .about-container{
+        height: 1050px;
+    }
+    .about-text{
+        font-size: 80%;
+        line-height: 24px;
+        width: 65%;
+    }
+    
 }
 
 @media only screen and (min-width: 1294px) {
     .skillset-container{
         height: 1450px;
+    }
+    .about-container{
+        height: 880px;
     }
 }
 
