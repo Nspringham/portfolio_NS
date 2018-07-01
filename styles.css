@@ -17,6 +17,10 @@
     font-style: italic;
 }
 @font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('fonts/roboto/Roboto-BoldItalic.ttf') format('truetype');
+}
+@font-face {
     font-family: 'Roboto-Thin';
     src: url('fonts/roboto/Roboto-Thin.ttf') format('truetype');
 }
@@ -153,7 +157,6 @@ body{
 
 /* SKILLSET SECTION */
 .skillset-container{
-    
     height: 1100px;
     text-align: center;
     display: flex;
@@ -174,18 +177,14 @@ body{
 .skills-container{
     width: 65%;
     height: 400px;
-    /* border: red solid 1px; */
     display: grid;
     grid-template-rows: 415px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 10px;
     justify-content: center;
-    
     flex-wrap: wrap;
-    
 }
 .skills-item{
-    /* border: green solid 1px; */
     width: 250px;
     height: 410px;
     display: flex;
@@ -197,7 +196,6 @@ body{
     width: 70%;
     margin: 5px;
     height: 170px;
-    /* border: blue solid 1px; */
     position: relative;
     background-size: cover;
     background-position: center center;
@@ -258,17 +256,56 @@ body{
     overflow: hidden;
     background-size: 150px;
 }
+
+/* BANNER SETION */
 .banner{
     display:flex;
+    flex-direction: column;
     height: 500px;
-    background-color: #ACAEAF;
+    background: linear-gradient(
+        rgba(73, 153, 188, 0.45),
+        rgba(73, 153, 188, 0.45) 
+    ),
+    url(img/ldn_architechture.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(170, 170, 170);
 }
+.banner-text{
+    width: 50%;
+    font-style: italic;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px rgb(66, 66, 66);
+}
+.banner-line-break-top{
+    width:25%;
+    border-bottom: solid 1.5px #4999BC;
+    margin-bottom: 40px;
+}
+.banner-line-break-bottom{
+    width:25%;
+    border-bottom: solid 1.4px #4999BC;
+    margin-top: 40px;
+}
+ /* ABOUT SECTION */
+ .about-container{
+     display: flex;
+     height: 600px;
+ }
 
 
 
 
 /* MEDIA QUERIES */
-/*iPhone 6 Portrait*/
+
 @media only screen and (min-width: 360px) and (max-width: 725px) and (orientation : portrait) { 
     .landing {
         background-image: url(img/phone_420x630.jpg);
@@ -331,13 +368,16 @@ body{
         height:32px;
         width: 32px;
         margin: 20px 12px 0px 12px;
-        /* border: solid red 1px; */
     }
     .portfolio-item{
         margin-top: 20px;   
     }
     .skillset-container{
         height: 3500px;
+    }
+    .banner-text{
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
