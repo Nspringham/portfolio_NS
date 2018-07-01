@@ -36,7 +36,7 @@ body{
 }
 .landing {
     width: 100%;
-    height: 1080px;
+    height: 960px;
     display: flex;
     flex-direction: column;
     background-image: url(img/landingpage_mac.jpg);
@@ -150,16 +150,16 @@ body{
     background-image: url(img/icons/social_media/twitter_blue.svg);
 }
 
-/* SKILLSET */
+/* SKILLSET SECTION */
 .skillset-container{
-    height: 1080px;
+    height: 960px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .skillset-header {
-    margin: 50px;
+    margin: 60px 10px 50px 10px;
 }
 .skillset-header h1 {
     font-size: 46px;
@@ -170,42 +170,77 @@ body{
 }
 .portfolio-container{
     width: 65%;
-    height: 400px;
-    border: red solid 1px;
+    height: 500px;
+    /* border: red solid 1px; */
     display: grid;
-    grid-template-rows: 380px;
+    grid-template-rows: 435px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 20px;
     flex-wrap: wrap;
     
 }
 .portfolio-item{
-    border: green solid 1px;
+    /* border: green solid 1px; */
     width: 250px;
-    /* height: 380px; */
+    height: 435px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .port-logo{
-    width: 90%;
-    height: 200px;
-    border: blue solid 1px;
+    width: 70%;
+    margin: 5px;
+    height: 170px;
+    /* border: blue solid 1px; */
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .port-header{
     font-family: Roboto-Light;
-    margin-top: 5px;
-    padding: 8px;
-    font-size: 26px;
+    margin-top: 10px;
+    height: 30px;
+    padding: 2px;
+    font-size: 22px;
 }
 .line-break{
     width:35%;
     border-bottom: solid 1px #4999BC;
-    margin: 6px 0px 10px 0px;
+    margin: 6px 0px 14px 0px;
 }
 .port-text{
-    line-height: 22px;
+    line-height: 20px;
+    width:90%;
 }
+.html-icon{
+    background-image: url(img/icons/html_css.svg);
+}
+.node-icon{
+    width: 60%;
+    background-image: url(img/icons/node-js.svg);
+}
+.design-icon{
+    background-image: url(img/icons/design.svg);
+}
+.comp-icon{
+    background-image: url(img/icons/comp_maintenance.svg);
+}
+.print-icon{
+    background-image: url(img/icons/print_network.svg);
+}
+.social-icon{
+    max-width: 90%;
+    background-image: url(img/icons/social_skills.svg);
+}
+.rd-icon{
+    background-image: url(img/icons/research_development.svg);
+}
+.responsive-icon{
+    background-image: url(img/icons/responsive.svg);
+}
+
+
 
 
 
@@ -274,6 +309,11 @@ body{
         width: 32px;
         margin: 20px 12px 0px 12px;
         /* border: solid red 1px; */
+    }
+    .portfolio-item{
+        margin-top: 25px;
+        
+        
     }
 }
 
