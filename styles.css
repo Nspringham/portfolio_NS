@@ -39,6 +39,10 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+a {
+    text-decoration: none;
+    text-align: center;
+}
 .landing {
     width: 100%;
     height: 960px;
@@ -249,7 +253,44 @@ body{
     overflow: hidden;
     background-size: 150px;
 }
-
+.up-arrow {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/icons/up-arrow.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    bottom:100px;
+    right:80px;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+}
+.animated {
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  } 
+  
+  @-webkit-keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
+    50% {-webkit-transform: translateY(-5px);}
+  } 
+  
+  @keyframes bounce { 
+    0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+  } 
+  
+  .bounce { 
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
 /* BANNER SETION */
 .banner{
     display:flex;
@@ -340,7 +381,6 @@ body{
     width: 65%;
     height: 256px;
     display: grid;
-    /* grid-template-rows: repeat(220px, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-gap: 10px;
     justify-content: center;
@@ -349,7 +389,7 @@ body{
 .project-item{
     width: 375px;
     height: 200px;
-    /* border: solid green 1px; */
+
     border-radius: 7%;
     display: flex;
     flex-direction: column;
@@ -377,9 +417,8 @@ body{
     background-color: #262626;
 }
 .github-icon{
-    background-image: url(img/icons/github_.svg);
-    background-size: 380%;
-    margin-bottom: 10px;
+    background-image: url(img/icons/github_white.svg);
+    background-size: 90%;
 }
 .codewars-color{
     background-color: #AA2E22;
@@ -410,26 +449,25 @@ body{
     background-size: 80%;
     width: 80%;
 }
-/* .logo-container-port{
-    display: flex;
-    align-content: flex-end;
-} */
-
 
 /* FOOTER SECTION */
 .footer-container{
     display: flex;
-    height: 100px;
+    height: 80px;
     background-color: #4999BC;
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;  
+}
+.socialmedia-container .sm-icon{
+    margin-top: 8px;
+}
+.copyright{
+    padding-top: 32px;
+    color: #DEDEDE;
 }
 
 
-
 /* MEDIA QUERIES */
-
 @media only screen and (min-width: 320px) and (max-width: 725px) and (orientation : portrait) { 
     .landing {
         background-image: url(img/phone_420x630.jpg);
@@ -449,7 +487,6 @@ body{
         justify-content: center;
         padding: 6.5px;
         visibility: hidden;
-        /* overflow: hidden; */
         text-align: center;
         width: 30%;
         opacity: 0;
@@ -506,7 +543,7 @@ body{
         margin-top: 20px;   
     }
     .skillset-container{
-        height: 3500px;
+        height: 3550px;
     }
     .banner-text{
         font-size: 15px;
@@ -519,14 +556,13 @@ body{
         height: 1120px;
     }
     .about-text{
-        font-size: 60%;
+        font-size: 80%;
+        line-height: 24px;
+        width: 65%;
     }
     .project-item{
         width: 260px;
         height: 160px;
-    }
-    .github-icon{
-        background-size: 320%;
     }
     .ssk-icon{
         width:80%;
@@ -538,10 +574,15 @@ body{
         background-size: 70%;
     }
     .portfolio-container{
-        height: 1400px;
+        height: 1300px;
     }
 
-
+    .up-arrow{
+        right:20px;
+        bottom:15px;
+        width: 32px;
+        height: 32px;
+    }
 }
 
 @media only screen and (min-width: 726px){
@@ -581,17 +622,6 @@ body{
     .about-container{
         height: 950px;
     }
-}
-@media only screen and (max-width: 880px) {
-    .about-container{
-        height: 1050px;
-    }
-    .about-text{
-        font-size: 80%;
-        line-height: 24px;
-        width: 65%;
-    }
-    
 }
 
 @media only screen and (min-width: 1294px) {
