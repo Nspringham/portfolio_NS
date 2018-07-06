@@ -9,6 +9,23 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.querySelector('.landing').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+}
+
+function skillsFunction() {
+  document.querySelector('.skillset-container').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+}
+function aboutFunction() {
+  document.querySelector('.about-container').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
+}
+function portfolioFunction() {
+  document.querySelector('.portfolio-container').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
 }
