@@ -430,6 +430,12 @@ a {
 .project-content:hover .content-overlay{
   opacity: 0.75;
 }
+.ssk-color:hover .content-overlay {
+  opacity: 1;
+}
+.mongo-color:hover .content-overlay {
+  opacity: 1;
+}
 
 .project-icon{
     height: 130px;
@@ -508,7 +514,7 @@ a {
 .ssk-icon{
     background-image: url(img/icons/logossk.svg);
     background-size: 80%;
-    width: 75%;
+    width: 220px;
 }
 .python-color{
     background-color: #A6C6E1;
@@ -521,12 +527,9 @@ a {
 }
 .mongo-icon{
     background-image: url(img/icons/mongodb.svg);
-    background-size: 80%;
-    width: 80%;
+    background-size: 90%;
+    width: 220px;
 }
-
-
-
 
 /* FOOTER SECTION */
 .footer-container{
@@ -553,7 +556,6 @@ a {
         background-repeat: no-repeat;
         background-size: cover;
         height: 750px;
-        
     }
     .nav-container{
         align-items: center;
@@ -656,7 +658,7 @@ a {
     }
 
     .up-arrow{
-        right:20px;
+        right:12px;
         bottom:85px;
         width: 32px;
         height: 32px;
@@ -699,6 +701,9 @@ a {
     }
     .about-container{
         height: 950px;
+    }
+    .portfolio-container {
+      height: 900px;
     }
 }
 
