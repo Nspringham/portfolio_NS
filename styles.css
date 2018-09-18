@@ -333,7 +333,7 @@ a {
 
  /* ABOUT SECTION */
  .about-container{
-    height: 880px;
+    height: 1000px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -645,12 +645,6 @@ a {
         width: 260px;
         height: 160px;
     }
-/*     .ssk-icon{
-        width:80%;
-    }
-    .codewars-icon{
-        width: 40%;
-    } */
     .python-icon{
         background-size: 70%;
     }
