@@ -555,8 +555,8 @@ a {
         image-rendering: -webkit-optimize-contrast;
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
-        height: 750px;
+        background-size: auto;
+        height: 630px;
     }
     .nav-container{
         align-items: center;
